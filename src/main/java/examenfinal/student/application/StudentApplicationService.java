@@ -26,7 +26,7 @@ public class StudentApplicationService {
 	@Transactional
 	public ResponseEntity<Object> getidmaestrias(int tipoStudent) throws Exception {
 		StudentDto studentDto = new StudentDto();
-		studentDto.setId(tipoStudent);		
+		studentDto.setStudentId(tipoStudent);		
 		Notification notification = this.validation(studentDto);
         if (notification.hasErrors()) {
             throw new IllegalArgumentException(notification.errorMessage());
@@ -45,7 +45,7 @@ public class StudentApplicationService {
 	
 	@Transactional
 	public List<Student> getidmaestria(Long idtipstudent,StudentDto studentDto) {		
-		studentDto.setId(idtipstudent);		
+		studentDto.setStudentId(idtipstudent);		
 		Notification notification = this.validation(studentDto);
         if (notification.hasErrors()) {
             throw new IllegalArgumentException(notification.errorMessage());

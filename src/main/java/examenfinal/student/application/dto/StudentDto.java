@@ -5,9 +5,10 @@ import java.sql.Date;
 
 import examenfinal.common.application.dto.RequestBaseDto;
 
+
 public class StudentDto extends RequestBaseDto {
 
-	private long id;
+	private long studentId;	
 	private String firstName;
 	private String lastName;	
 	private Date birthDate;
@@ -17,15 +18,11 @@ public class StudentDto extends RequestBaseDto {
 	private String email;
 	private String id_tipo;
 	
-	
-	public void setId_tipo(String id_tipo) {
-		this.id_tipo = id_tipo;
+	public long getStudentId() {
+		return studentId;
 	}
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
+	public void setStudentId(long studentId) {
+		this.studentId = studentId;
 	}
 	public String getFirstName() {
 		return firstName;
@@ -69,7 +66,11 @@ public class StudentDto extends RequestBaseDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+	public String getId_tipo() {
+		return id_tipo;
+	}
+	public void setId_tipo(String id_tipo) {
+		this.id_tipo = id_tipo;
+	}
 	     
 }

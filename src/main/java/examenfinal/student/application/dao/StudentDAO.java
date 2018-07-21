@@ -43,7 +43,7 @@ JdbcTemplate template;
 		        while(rs.next()){  
 		        	Student student=new Student(); 
 		        	
-		        	student.setId(rs.getInt(1));
+		        	student.setStudentId(rs.getInt(1));
 		        	student.setFirstName(rs.getString(2));
 		        	student.setLastName(rs.getString(3));
 		        	student.setBirthDate(rs.getDate(4));
@@ -71,7 +71,7 @@ JdbcTemplate template;
 		        List<Student> list=new ArrayList<Student>();  		        
 		        while(rs.next()){  
 		        	Student student=new Student();		        	
-		        	student.setId(rs.getInt(1));
+		        	student.setStudentId(rs.getInt(1));
 		        	student.setFirstName(rs.getString(2));
 		        	student.setLastName(rs.getString(3));
 		        	student.setBirthDate(rs.getDate(4));

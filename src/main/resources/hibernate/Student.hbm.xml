@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="examenfinal.student.domain.entity">
 	<class name="Student" table="student">
-        <id name="id" column="alumno_id">
+        <id name="studentId" column="alumno_id">
             <generator class="native"/>
         </id>
         <property name="firstName" column="first_name" />

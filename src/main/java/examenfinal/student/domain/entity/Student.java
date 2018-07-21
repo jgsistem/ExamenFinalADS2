@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class Student {
 
-	private long id;
+	private long studentId;	
 	private String firstName;
 	private String lastName;	
 	private Date birthDate;
@@ -15,12 +15,7 @@ public class Student {
 	private String id_tipo;
 	private Integer monto;
 	
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -76,8 +71,12 @@ public class Student {
 		this.monto = monto;
 	}
 	
-	
-	
+	public long getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(long studentId) {
+		this.studentId = studentId;
+	}
 	
 	
 	     
