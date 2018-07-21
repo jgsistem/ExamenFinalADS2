@@ -30,8 +30,8 @@ public class StudentController {
 		
 	
 	@CrossOrigin(origins = "*")
-	@RequestMapping(method = RequestMethod.GET, value = "/GetIdStudent")
-	public List<Student> getAllCustomer(Long idtipstudent,StudentDto studentDto) throws Exception{		
+	@RequestMapping(method = RequestMethod.GET, value = "/GetIdStudent/{typeStudent}")
+	public List<Student> getAllCustomer(@PathVariable(value="typeStudent") Long idtipstudent,StudentDto studentDto) throws Exception{		
 		   return studentApplicationService.getidmaestria(idtipstudent,studentDto);
 	}
 		
